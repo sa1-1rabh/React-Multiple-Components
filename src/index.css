@@ -1,0 +1,234 @@
+body{
+  margin: 0;
+  background-image: url("./assets/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+/*------------------------------------------------------ */
+
+.link-active{
+  background-color: rgba(0, 0, 0, 0.894);
+  color: rgba(26, 243, 26, 0.693);
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.5s ease;
+}
+.not-active{
+  color: rgb(207, 7, 7);
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  transition: 0.5s ease-out;
+}
+.project-display{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding-top: 50px;
+  padding-left: 200px;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+.app-nav-container{
+  background-color: hsla(208, 80%, 65%, 0.587);
+  border: 2px solid black;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding-bottom: 25px;
+}
+.app-link-container {
+  border-radius: 5px;
+  width: 60vw;
+  display: grid;
+  background-color:white;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+}
+/*------------------------------------------------------ */
+
+
+.stop-watch-timer{
+  font-size: 4rem;
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
+.stop-watch-buttons{
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+.stop-watch-buttons button{
+  font-size: 30px;
+  color: white;
+  background-color: black;
+  margin-bottom: 25px;
+}
+
+
+/*------------------------------------------------------ */
+
+
+.clock-body{
+  background-image: url("./assets/clock-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover; 
+  
+  margin-top: -50px;
+  margin-left: -200px;
+  display: flex;
+  height: 110vh;
+  width: 120%;
+  justify-content: center;
+  align-items: center;
+} 
+.clock-container{
+  margin-left: -200px;
+  width: 100vw;
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+.clock{
+  color: black(0, 0, 0, 0.597);
+  font-size: 6rem;
+  text-shadow: 2px 2px 5px rgb(200, 121, 216);
+} 
+
+ 
+/*------------------------------------------------------ */
+
+
+.to-do-container{
+  padding: 0;
+  background-color: antiquewhite;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.add-button{
+  background-color: greenyellow;
+}
+.delete-button{
+  background-color: hsl(0, 100%, 58%);
+}
+
+
+/* ------------------------------------------------------ */
+
+
+.color-picker-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-picker-box{
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  margin-bottom: 25px;
+  transition : 0.25s ease;
+}
+
+.color-picker-box p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+input[type = "color"]{
+  width: 75px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 10px;
+  border : 3px solid black
+}
+
+
+/* ------------------------------------------------------ */
+
+
+.counter-container{
+  margin: 0;
+  border: 2px solid black;
+  width: 350px;
+}
+
+.counter-display{
+  border: 4px dotted black;
+  border-radius: 20px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+}
+
+.counter-button-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-top: 30px;
+}
+
+.counter-button{
+  font-weight: 700;
+  background-color: rgb(103, 241, 241);
+  height: 40px;
+  width: 100px;
+  margin: 0;
+}
+
+.counter-button:hover{
+  cursor:pointer;
+  background-color: rgb(146, 245, 245);
+}
+
+
+/* ------------------------------------------------------ */
+
+
+.card{
+  padding-top: 10px;
+  border:1px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+  max-width: 300px;
+  text-align: center;
+  margin: 10px;
+  display:inline-block;
+}
+.card .card-image{
+  height:100px;
+  border-radius: 1000px;
+}
+
+.card .card-title{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.card .card-text{
+  font-family: Arial, Helvetica, sans-serif;
+}
